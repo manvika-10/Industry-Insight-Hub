@@ -1,0 +1,203 @@
+/* Styling the header */
+header {
+  background-color: #f2f2f2;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+header img {
+  height: 60px;
+  width: auto; /* Maintain aspect ratio of the logo */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0; /* Remove right margin from the last list item */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold; /* Add some emphasis to the navigation links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header nav ul li a:hover {
+  color: #555; /* Darken the link color on hover */
+}
+
+/* Styling the main content */
+/* Styling the header (keep your existing header styles) */
+
+main {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+}
+
+#news-container{
+  display: flex;
+  flex-wrap: wrap; /* Allow articles to wrap to the next line if there's not enough space */
+  gap: 20px; /* Add some gap between articles */
+}
+
+/* Styling for each article */
+article {
+  flex: 0 0 calc(33.33% - 20px); /* Make each article take up one-third of the container minus the gap */
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+article a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+article a:hover {
+  color: #0056b3;
+}
+
+/* Styling the subscription form*/
+#subscription-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#subscription-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="email"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*Style for specific devices*/
+@media only screen and (max-width: 767px) {
+  /* Adjust the layout for mobile devices using CSS Grid */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Adjust the layout for tablets using CSS Grid */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+/* Styles for desktops and larger screens */
+@media only screen and (min-width: 1024px) {
+  /* Adjust the layout for desktops and larger screens using CSS Grid */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+/* Styling the search section */
+#search-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.article {
+  margin-bottom: 10px;
+}
+
+/* Feda-in animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+}
+
+/* Add styles for the error message */
+#error-message {
+  color: red;
+}
+
+/* Add styles to visually indicate error state */
+.error {
+  border-color: red;
+}
+
+/* Add a class to hide the error message initially */
+.hidden {
+  display: none;
+}

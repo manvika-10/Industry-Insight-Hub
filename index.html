@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY WEB PROJECT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <body>
+      <header>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVqKPxrmpX8WkkVjFI8PrD4PFsxxt4mOr0OMEZV-sEg&s"
+          alt="Company Logo"
+        />
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="feda-in">
+        <div id="news-container"></div>
+        <div id="home-section">
+          <!-- Home section content -->
+          <section id="search-section">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Enter a keyword"
+            />
+            <button id="search-button">Search</button>
+          </section>
+        </div>
+
+        <div id="news-section">
+          <!-- News section content -->
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#news-section">News</a></li>
+          </ul>
+        </nav>
+
+        <section id="subscription-section">
+          <h2>Subscribe to Our Newsletter</h2>
+          <form id="subscription-form">
+            <input
+              type="email"
+              id="email-input"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <span id="error-message" class="hidden"
+              >Please enter a valid email address.</span
+            >
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
+        <div id="news-container">
+          <article class="show">
+            <h2>
+              Adani Group promoters likely to reduce holdings to create
+              additional liquidity: Report
+            </h2>
+            <img
+              src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-99610,msid-97523233/adani-group-1.jpg"
+              alt="Article image"
+            />
+            <p>
+              Over the past few months, promoters of Adani Group have reduced a
+              significant portion of their holdings in group companies following
+              the stake sale to US-based boutique investment firm, GQG Partners.
+              A report suggests that Adani Group promoters may continue to
+              decrease their holdings in the coming months.
+            </p>
+            <p>
+              The objective behind this move, as reported by The Economic Times,
+              is to create a liquidity buffer that can be utilized for equity
+              infusion in various units and to explore new opportunities. The
+              report highlights discussions with other global investors about
+              the potential further reduction of holdings.
+            </p>
+            <a
+              href="https://www.indiatoday.in/business/story/adani-group-promoters-holdings-sale-global-investors-whats-at-stake-2402639-2023-07-06"
+              >Read More</a
+            >
+          </article>
+          <article>
+            <h2>
+              Gold, silver price today, July 6, 2023: Precious metals witness
+              dip on MCX | Check latest rates here
+            </h2>
+            <img
+              src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202307/download_5-sixteen_nine.jpg?VersionId=X.IdK9GA3aHy.XiLHf4s8YMY2L6bX1ac&size=690:388"
+              alt="Article img"
+            />
+            <p>
+              By India Today Business Desk: Both gold and silver prices have
+              recorded a downfall on the Multi Commodity Exchange (MCX) on
+              Thursday, July 6, 2023.
+            </p>
+            <p>
+              Gold futures, maturing on August 4, 2023, stood at Rs 58,638 per
+              10 grams, after recording a marginal dip of Rs 18 or 0.03 percent.
+              The previous close was recorded at Rs 58,473.
+            </p>
+            <p>
+              Similarly, silver futures, due on September 5, 2023, witnessed a
+              downfall of Rs 41 or 0.06 percent and were retailing at Rs 71,472
+              per kg on the MCX against the previous close of Rs 71,357.
+            </p>
+          </article>
+        </div>
+      </main>
+    </body>
+  </head>
+</html>
